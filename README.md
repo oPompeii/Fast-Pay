@@ -125,8 +125,6 @@ MIT License - veja [LICENSE](LICENSE)
 
 **Pompei**
 - GitHub: [@oPompeii](https://github.com/oPompeii)
-- LinkedIn: [Seu Perfil](https://linkedin.com)
+- LinkedIn: [Seu Perfil](https://linkedin.com/in/matheus-pompei)
 
 ---
-
-**Construído com ❤️ por Pompei**
