@@ -1,0 +1,497 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom scrollbar for better mobile experience */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #141e2a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2C3E50;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #1a2634;
+}
+
+/* Base responsive styles */
+html {
+  font-size: 16px;
+}
+
+@media (max-width: 640px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+/* Prevent horizontal overflow */
+body {
+  overflow-x: hidden;
+}
+
+/* Modal responsiveness */
+.modal-container {
+  @apply fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4;
+}
+
+.modal-content {
+  @apply bg-navy-800 rounded-lg w-full max-w-md mx-auto overflow-y-auto max-h-[90vh];
+}
+
+/* Grid system responsiveness */
+.responsive-grid {
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6;
+}
+
+/* Form field responsiveness */
+.form-field {
+  @apply bg-navy-700 w-full px-4 py-2 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:outline-none;
+}
+
+/* Button responsiveness */
+.responsive-button {
+  @apply px-4 py-2 rounded-lg font-medium transition-colors flex items-center justify-center gap-2;
+}
+
+/* Card responsiveness */
+.responsive-card {
+  @apply bg-navy-800 rounded-lg p-4 md:p-6;
+}
+
+/* Table responsiveness */
+.responsive-table {
+  @apply w-full overflow-x-auto;
+}
+
+/* Navigation responsiveness */
+.responsive-nav {
+  @apply flex flex-col md:flex-row items-center gap-2 md:gap-4;
+}
+
+/* Text responsiveness */
+.responsive-text {
+  @apply text-base md:text-lg lg:text-xl;
+}
+
+/* Icon responsiveness */
+.responsive-icon {
+  @apply w-5 h-5 md:w-6 md:h-6;
+}
+
+/* Spacing utilities */
+.responsive-spacing {
+  @apply p-4 md:p-6 lg:p-8;
+}
+
+/* Container max-width */
+.container-fluid {
+  @apply max-w-7xl mx-auto px-4;
+}
+
+/* Flex utilities */
+.flex-responsive {
+  @apply flex flex-col md:flex-row;
+}
+
+/* Gap utilities */
+.gap-responsive {
+  @apply gap-4 md:gap-6 lg:gap-8;
+}
+
+/* Margin utilities */
+.margin-responsive {
+  @apply my-4 md:my-6 lg:my-8;
+}
+
+/* Padding utilities */
+.padding-responsive {
+  @apply p-4 md:p-6 lg:p-8;
+}
+
+/* Border radius utilities */
+.rounded-responsive {
+  @apply rounded-lg md:rounded-xl;
+}
+
+/* Shadow utilities */
+.shadow-responsive {
+  @apply shadow-md md:shadow-lg;
+}
+
+/* Typography utilities */
+.text-responsive {
+  @apply text-sm md:text-base lg:text-lg;
+}
+
+/* Heading utilities */
+.heading-responsive {
+  @apply text-xl md:text-2xl lg:text-3xl font-bold;
+}
+
+/* Subheading utilities */
+.subheading-responsive {
+  @apply text-lg md:text-xl lg:text-2xl font-semibold;
+}
+
+/* Button group utilities */
+.button-group-responsive {
+  @apply flex flex-col md:flex-row gap-2 md:gap-4;
+}
+
+/* Input group utilities */
+.input-group-responsive {
+  @apply flex flex-col md:flex-row items-center gap-2 md:gap-4;
+}
+
+/* Card group utilities */
+.card-group-responsive {
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6;
+}
+
+/* List utilities */
+.list-responsive {
+  @apply space-y-2 md:space-y-4;
+}
+
+/* Modal utilities */
+.modal-responsive {
+  @apply w-full max-w-md md:max-w-lg lg:max-w-xl mx-auto;
+}
+
+/* Form utilities */
+.form-responsive {
+  @apply space-y-4 md:space-y-6;
+}
+
+/* Table utilities */
+.table-responsive {
+  @apply min-w-full divide-y divide-navy-700;
+}
+
+/* Navigation utilities */
+.nav-responsive {
+  @apply flex flex-col md:flex-row items-center justify-between gap-4 md:gap-6;
+}
+
+/* Sidebar utilities */
+.sidebar-responsive {
+  @apply w-full md:w-64 lg:w-72;
+}
+
+/* Content utilities */
+.content-responsive {
+  @apply w-full md:flex-1;
+}
+
+/* Grid utilities */
+.grid-responsive {
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6;
+}
+
+/* Flex container utilities */
+.flex-container-responsive {
+  @apply flex flex-col md:flex-row items-start md:items-center gap-4 md:gap-6;
+}
+
+/* Image utilities */
+.image-responsive {
+  @apply w-full h-auto object-cover;
+}
+
+/* Icon container utilities */
+.icon-container-responsive {
+  @apply w-8 h-8 md:w-10 md:h-10;
+}
+
+/* Badge utilities */
+.badge-responsive {
+  @apply px-2 py-1 md:px-3 md:py-1.5 text-xs md:text-sm rounded-full;
+}
+
+/* Alert utilities */
+.alert-responsive {
+  @apply p-4 md:p-6 rounded-lg;
+}
+
+/* Tooltip utilities */
+.tooltip-responsive {
+  @apply text-xs md:text-sm p-2 md:p-3 rounded;
+}
+
+/* Progress bar utilities */
+.progress-responsive {
+  @apply h-2 md:h-3 rounded-full;
+}
+
+/* Avatar utilities */
+.avatar-responsive {
+  @apply w-8 h-8 md:w-10 md:h-10 rounded-full;
+}
+
+/* Dropdown utilities */
+.dropdown-responsive {
+  @apply w-48 md:w-56 rounded-lg shadow-lg;
+}
+
+/* Tab utilities */
+.tab-responsive {
+  @apply px-3 py-2 md:px-4 md:py-2.5 text-sm md:text-base;
+}
+
+/* Breadcrumb utilities */
+.breadcrumb-responsive {
+  @apply text-sm md:text-base;
+}
+
+/* Pagination utilities */
+.pagination-responsive {
+  @apply px-3 py-1 md:px-4 md:py-2 text-sm md:text-base;
+}
+
+/* Search utilities */
+.search-responsive {
+  @apply w-full md:w-auto;
+}
+
+/* Filter utilities */
+.filter-responsive {
+  @apply w-full md:w-48 lg:w-56;
+}
+
+/* Sort utilities */
+.sort-responsive {
+  @apply w-full md:w-40 lg:w-48;
+}
+
+/* Loading utilities */
+.loading-responsive {
+  @apply w-6 h-6 md:w-8 md:h-8;
+}
+
+/* Divider utilities */
+.divider-responsive {
+  @apply my-4 md:my-6;
+}
+
+/* Chip utilities */
+.chip-responsive {
+  @apply px-2 py-1 md:px-3 md:py-1.5 text-xs md:text-sm rounded-full;
+}
+
+/* Toggle utilities */
+.toggle-responsive {
+  @apply w-10 h-6 md:w-12 md:h-7;
+}
+
+/* Slider utilities */
+.slider-responsive {
+  @apply h-2 md:h-3 rounded-full;
+}
+
+/* Rating utilities */
+.rating-responsive {
+  @apply text-lg md:text-xl;
+}
+
+/* Timeline utilities */
+.timeline-responsive {
+  @apply space-y-4 md:space-y-6;
+}
+
+/* Step utilities */
+.step-responsive {
+  @apply w-6 h-6 md:w-8 md:h-8 text-sm md:text-base;
+}
+
+/* Menu utilities */
+.menu-responsive {
+  @apply space-y-1 md:space-y-2;
+}
+
+/* Accordion utilities */
+.accordion-responsive {
+  @apply space-y-2 md:space-y-3;
+}
+
+/* Calendar utilities */
+.calendar-responsive {
+  @apply text-sm md:text-base;
+}
+
+/* Chart utilities */
+.chart-responsive {
+  @apply h-48 md:h-64 lg:h-80;
+}
+
+/* Map utilities */
+.map-responsive {
+  @apply h-64 md:h-96;
+}
+
+/* Video utilities */
+.video-responsive {
+  @apply aspect-video;
+}
+
+/* Audio utilities */
+.audio-responsive {
+  @apply w-full;
+}
+
+/* File upload utilities */
+.file-upload-responsive {
+  @apply p-4 md:p-6;
+}
+
+/* Color picker utilities */
+.color-picker-responsive {
+  @apply w-8 h-8 md:w-10 md:h-10;
+}
+
+/* Date picker utilities */
+.date-picker-responsive {
+  @apply w-full md:w-auto;
+}
+
+/* Time picker utilities */
+.time-picker-responsive {
+  @apply w-full md:w-auto;
+}
+
+/* Range slider utilities */
+.range-slider-responsive {
+  @apply w-full;
+}
+
+/* Rich text editor utilities */
+.editor-responsive {
+  @apply min-h-[200px] md:min-h-[300px];
+}
+
+/* Code editor utilities */
+.code-editor-responsive {
+  @apply min-h-[200px] md:min-h-[300px];
+}
+
+/* Text content utilities */
+.text-content-responsive {
+  @apply text-base md:text-lg space-y-4 md:space-y-6;
+}
+
+/* PDF viewer utilities */
+.pdf-viewer-responsive {
+  @apply h-[500px] md:h-[700px];
+}
+
+/* Image viewer utilities */
+.image-viewer-responsive {
+  @apply max-h-[500px] md:max-h-[700px];
+}
+
+/* Video player utilities */
+.video-player-responsive {
+  @apply aspect-video;
+}
+
+/* Audio player utilities */
+.audio-player-responsive {
+  @apply w-full;
+}
+
+/* File viewer utilities */
+.file-viewer-responsive {
+  @apply max-h-[500px] md:max-h-[700px];
+}
+
+/* Mobile menu utilities */
+.mobile-menu-responsive {
+  @apply fixed inset-0 bg-black/50 z-50 md:hidden;
+}
+
+/* Mobile menu content utilities */
+.mobile-menu-content-responsive {
+  @apply fixed inset-y-0 right-0 w-64 bg-navy-800 p-4 transform transition-transform duration-200;
+}
+
+/* Mobile menu overlay utilities */
+.mobile-menu-overlay-responsive {
+  @apply fixed inset-0 bg-black/50 z-40 md:hidden;
+}
+
+/* Drawer utilities */
+.drawer-responsive {
+  @apply fixed inset-y-0 w-64 md:w-80 bg-navy-800 p-4 transform transition-transform duration-200;
+}
+
+/* Drawer overlay utilities */
+.drawer-overlay-responsive {
+  @apply fixed inset-0 bg-black/50 z-40;
+}
+
+/* Toast utilities */
+.toast-responsive {
+  @apply fixed bottom-4 right-4 max-w-md bg-navy-800 p-4 rounded-lg shadow-lg transform transition-all duration-200;
+}
+
+/* Snackbar utilities */
+.snackbar-responsive {
+  @apply fixed bottom-4 left-1/2 -translate-x-1/2 max-w-md bg-navy-800 p-4 rounded-lg shadow-lg transform transition-all duration-200;
+}
+
+/* Dialog utilities */
+.dialog-responsive {
+  @apply fixed inset-0 flex items-center justify-center z-50;
+}
+
+/* Dialog content utilities */
+.dialog-content-responsive {
+  @apply bg-navy-800 rounded-lg p-4 md:p-6 max-w-md w-full mx-4 md:mx-auto;
+}
+
+/* Popover utilities */
+.popover-responsive {
+  @apply absolute z-10 bg-navy-800 rounded-lg shadow-lg p-4;
+}
+
+/* Tooltip container utilities */
+.tooltip-container-responsive {
+  @apply absolute z-10 bg-navy-800 rounded-lg shadow-lg p-2 md:p-3;
+}
+
+/* Menu container utilities */
+.menu-container-responsive {
+  @apply absolute z-10 bg-navy-800 rounded-lg shadow-lg py-1;
+}
+
+/* Menu item utilities */
+.menu-item-responsive {
+  @apply px-4 py-2 hover:bg-navy-700 cursor-pointer;
+}
+
+/* Sidebar overlay utilities */
+.sidebar-overlay-responsive {
+  @apply fixed inset-0 bg-black/50 z-40 lg:hidden;
+}
+
+/* Content wrapper utilities */
+.content-wrapper-responsive {
+  @apply flex-1 overflow-x-hidden overflow-y-auto;
+}
+
+/* Header utilities */
+.header-responsive {
+  @apply sticky top-0 z-30 bg-navy-900 border-b border-navy-700;
+}
+
+/* Footer utilities */
+.footer-responsive {
+  @apply mt-auto py-4 md:py-6 bg-navy-800;
+}
