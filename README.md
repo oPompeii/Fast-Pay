@@ -7,20 +7,20 @@
 [![Node](https://img.shields.io/badge/Node-18+-brightgreen)](https://nodejs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.5-blue)](https://www.typescriptlang.org/)
 
-## 🚀 O Que É
+## O Que É
 
 FastPay é uma aplicação web para gerenciamento de pagamentos, trading de criptomoedas e investimentos digitais. Oferece uma experiência intuitiva com recursos como dashboard financeiro, AI Advisor e programa de afiliados.
 
-## ✨ Features Principais
+## Features Principais
 
-- 💰 **Gestão de Pagamentos** - Autenticação segura, dashboard e histórico de transações
-- 📈 **Trading de Criptomoedas** - FastCoin com preços em tempo real
-- 🤖 **AI Advisor** - Recomendações inteligentes com OpenAI
-- 👥 **Programa de Afiliados** - Sistema de referência e comissões
-- 📊 **Relatórios** - Exportação em PDF e Excel
+- **Gestão de Pagamentos** - Autenticação segura, dashboard e histórico de transações
+- **Trading de Criptomoedas** - FastCoin com preços em tempo real
+- **AI Advisor** - Recomendações inteligentes com OpenAI
+- **Programa de Afiliados** - Sistema de referência e comissões
+- **Relatórios** - Exportação em PDF e Excel
 - 17 **Páginas** totalmente implementadas
 
-## 🛠️ Stack Tecnológico
+## Stack Tecnológico
 
 | Camada | Tecnologia |
 |--------|-----------|
