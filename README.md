@@ -29,7 +29,7 @@ FastPay é uma aplicação web para gerenciamento de pagamentos, trading de crip
 | **IA** | OpenAI GPT-4 |
 | **Exportação** | jsPDF, XLSX |
 
-## 📁 Estrutura
+## Estrutura
 
 ```
 src/
@@ -39,7 +39,7 @@ src/
 └── App.tsx       # Router principal
 ```
 
-## 📊 Páginas Implementadas
+## Páginas Implementadas
 
 | Categoria | Páginas |
 |-----------|---------|
@@ -50,7 +50,7 @@ src/
 | **Social** | Affiliates, Invite |
 | **Suporte** | Support, Tutorial, Terms, Notifications |
 
-## 🔐 Segurança
+## Segurança
 
 - ✅ Autenticação JWT com Supabase
 - ✅ Row Level Security (RLS)
@@ -67,10 +67,6 @@ Documentação completa em `./DOCS`:
 - **RELATORIO_CORRECOES.md** - Análise técnica
 - **SUMARIO_EXECUTIVO.md** - Overview
 - **ROADMAP.md** - Plano futuro
-
-## 📄 Licença
-
-MIT License - veja [LICENSE](LICENSE)
 
 ## 👨‍💼 Autor
 
