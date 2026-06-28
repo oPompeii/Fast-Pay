@@ -29,55 +29,6 @@ FastPay é uma aplicação web para gerenciamento de pagamentos, trading de crip
 | **IA** | OpenAI GPT-4 |
 | **Exportação** | jsPDF, XLSX |
 
-## 📦 Instalação
-
-### Pré-requisitos
-- Node.js 18+
-- npm 9+
-- Conta Supabase (gratuita)
-
-### Setup Rápido
-
-```bash
-# Clone o repositório
-git clone https://github.com/oPompeii/Fast-Pay.git
-cd Fast-Pay
-
-# Instale dependências
-npm install
-
-# Configure variáveis
-cp .env.example .env.local
-# Edite com suas credenciais Supabase
-
-# Inicie desenvolvimento
-npm run dev
-```
-
-Acesse: http://localhost:5173
-
-## 🧪 Comandos
-
-```bash
-npm run dev      # Desenvolvimento
-npm run build    # Build produção
-npm run preview  # Preview build
-npm run lint     # Verificar código
-```
-
-## 🚀 Deploy
-
-### Vercel (Recomendado)
-```bash
-npm install -g vercel
-vercel deploy
-```
-
-### Netlify
-- Conecte seu repositório GitHub
-- Build: `npm run build`
-- Publish: `dist`
-
 ## 📁 Estrutura
 
 ```
